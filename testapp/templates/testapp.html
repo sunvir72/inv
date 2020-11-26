@@ -1,0 +1,26 @@
+{% extends 'basepage.html' %}
+{% block content %}
+{% load static %}
+{% if messages %}
+  {% for message in messages %}
+  <div class="alert alert-success" role="alert">
+    <center>{{ message }}</center>
+  </div>
+  {% endfor %}
+{% endif %}
+<div style="background-color:#ffffff94">
+<center>
+  <h1 style="font-family:fantasy;">
+  	<a href="/"><img src="{% static 'img/icn.png' %}" style="max-width:80;max-height:80;margin-right:-10px"></a> Inventory management</h1>
+  <hr>  
+</center></div>
+<div class="container">
+
+<br>
+<a href="{% url 'viewInventory' %}" class="btn btn-light">View/Update Inventory</a>
+<a href="{% url 'addSales' %}" class="btn btn-light">Add Sales</a>
+</div>
+
+{% endblock %}
+
+

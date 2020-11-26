@@ -1,0 +1,105 @@
+{% load static %}
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="{% static 'img/icn.png' %}" />
+<title>Easy ML</title>
+
+<style>
+.top-container {
+  background-color: #FFF6E9;
+  padding: 0.1px;
+  text-align: center;
+}
+body {margin:0;}
+
+</style>
+<style>
+h1,h2,h3,h4,h5,h6,p {
+  font-family:Arial;
+}
+table{
+  white-space: nowrap;
+}
+input[type=submit] {
+  background-color: #376DF3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+input[type=radio],input[type=checkbox] {
+width:30px;
+height:20px;
+vertical-align: middle;
+margin: 5px 0;
+cursor: pointer;
+}
+div {
+  word-wrap: break-word;
+}
+p.hh {
+margin: 0;
+padding: 0;
+}
+hr.hh{
+border-color:#97B7E1;
+margin: 0;
+padding: 0;
+max-width: 700px;
+margin-bottom:10px;
+}
+.custom-control-label::before, 
+.custom-control-label::after {
+width: 1.25rem !important;
+height: 1.25rem !important;
+cursor:pointer ;
+}
+
+</style>
+
+<!-- Required meta tags -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+  <style>
+  html, body{ 
+   margin:0; 
+  }
+
+
+body{
+  background-image: url("{% static "img/bg3.jpg" %}");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 450px) {
+  img.hh {
+    max-width:400px;
+  }
+}
+  </style>
+<body>
+<main>
+
+
+{% block content %}
+{% endblock %}
+
+</main>
+
+
+</body>
+</html>
